@@ -13,17 +13,17 @@
     }
   },
   "postAttachCommand": {
-    "public": "gh codespace ports visibility 2059:public -c $CODESPACE_NAME",
+    "public": "gh codespace ports visibility 443:public -c $CODESPACE_NAME",
     "xray": "sudo /usr/local/bin/xray -c /etc/config.json"
   },
   "portsAttributes": {
-    "2059": {
+    "443": {
       "label": "xray",
       "protocol": "http",
       "onAutoForward": "silent"
     }
   },
-  "forwardPorts": [2095],
+  "forwardPorts": [443],
   "hostRequirements": {
     "cpus": 2
   }
